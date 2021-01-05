@@ -5,6 +5,7 @@
 header {
   background-color: #272727;
   padding: 10px 0 40px 0;
+  width: 98vw;
 }
 
 ul.first-level-navi {
@@ -22,7 +23,7 @@ ul.first-level-navi {
 }
 
 .header-image {
-  height: 80%;
+  height: 75%;
   background-image: url(../assets/panorama.jpg);
   background-position: center;
   background-size: cover;
