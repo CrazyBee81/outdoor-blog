@@ -1,0 +1,97 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./blog-cards.css";
+
+/* ------------------------- */
+/* Page Structure */
+/* ------------------------- */
+
+.container {
+  /* Step 1: Set display to grid */
+  display: grid;
+  /* Step 2: setup rows amd columns */
+  grid-template-columns: 850px;
+  grid-template-rows: 350px 1fr 150px;
+  grid-template-areas: "hd" "main" "ft";
+  border: 2px solid yellow;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-rows: 500px 1fr 200px;
+    grid-template-areas: "hd hd hd hd" "main main main main" "ft ft ft ft";
+    border: 2px solid yellow;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: 320px 320px 320px 320px 320px 320px;
+    grid-template-rows: 500px 1000px 200px;
+    grid-template-areas: "hd hd hd hd hd hd" "main main main main main main" "ft ft ft ft ft ft";
+    border: 2px solid yellow;
+  }
+}
+
+.box {
+  border: 1px solid white;
+}
+
+
+header {
+  grid-area: hd;
+}
+
+footer {
+  grid-area: ft;
+}
+
+main {
+  grid-area: main;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ------------------------- */
+/* General Settings */
+/* ------------------------- */
+
+body {
+  font: normal 22px "Crimson Pro", serif;
+  line-height: 32px;
+}
+
+p {
+  margin: 10px 10px 10px;
+}
+
+h1 {
+  color: white;
+  margin: 20px 20px;
+}
+
+h2 {
+  margin: 20px 10px;
+}
+
+.list-items > a {
+  text-decoration: none;
+  color: black;
+}
+
+main{
+  background-color: #272727;
+}
+
+

@@ -1,0 +1,34 @@
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+
+header {
+  background-color: #272727;
+  padding: 10px 0 40px 0;
+}
+
+ul.first-level-navi {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  height: 12%;
+  align-items: center;
+  margin: 0;
+}
+
+.first-level-navi > a {
+  color: white !important;
+  padding: 0 20px;
+}
+
+.header-image {
+  height: 80%;
+  background-image: url(../assets/panorama.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  padding: 0 10px;
+}

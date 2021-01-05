@@ -1,0 +1,74 @@
+/* ------------------------- */
+/* Gallery */
+/* ------------------------- */
+.areas > .flex-container {
+  justify-content: center;
+}
+
+@media screen and (max-width: 899px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 900px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px;
+    grid-gap: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+.gallery-box {
+  height: 100%;
+  width: 100%;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#box-one {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-two {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-three {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-four {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-five {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-six {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

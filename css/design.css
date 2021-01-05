@@ -1,0 +1,374 @@
+/* ------------------------- */
+/* General Settings */
+/* ------------------------- */
+
+
+body {
+  font: normal 22px "Crimson Pro", serif;
+  line-height: 32px;
+}
+
+p {
+  margin: 0 10px;
+}
+
+.small-paragraph {
+  font-size: 0.75rem;
+}
+
+h2 {
+  margin: 20px 10px 0px;
+}
+
+#container {
+  height: 100000px;
+  display: flex;
+}
+
+.navi {
+  padding: 0 40px 0 0;
+  position: sticky;
+  top: 0;
+}
+
+.navi-list {
+  list-style-type: none;
+}
+
+.list-items > a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.content-box {
+  height: 100vh;
+  padding: 0 40px 0 0;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+
+header {
+  background-color: #272727;
+  padding: 10px 0 40px 0;
+  height: 550px
+}
+
+header > h1 {
+  color: white;
+  margin: 20px 20px;
+}
+
+.header-image {
+  height: 80%;
+  background-image: url(../assets/panorama.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  padding: 0 10px;
+}
+
+ul.first-level-navi {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  height: 15%;
+  align-items: center;
+  margin: 0;
+}
+
+.first-level-navi > a {
+  color: white;
+  padding: 0 20px;
+}
+
+/* ------------------------- */
+/* Article */
+/* ------------------------- */
+#article {
+  overflow: hidden;
+}
+
+.inflow-image {
+  float: right;
+  height: 300px;
+  width: 250px;
+}
+
+/* ------------------------- */
+/* Gallery */
+/* ------------------------- */
+#gallery > .flex-container {
+  height: 420px;
+  width: 960px;
+}
+
+@media screen and (max-width: 899px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px;
+    grid-gap: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.gallery-box {
+  height: 100%;
+  width: 100%;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#box-one {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-two {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-three {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-four {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-five {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#box-six {
+  background-image: url(../assets/parking.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* ------------------------- */
+/* Cards */
+/* ------------------------- */
+.cards {
+  height: 860px;
+  width: 820px;
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 420px 420px;
+  grid-gap: 20px;
+}
+
+.card-box {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px 50px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.property-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+/* Top Half of card, image. */
+
+.property-image {
+  height: 35%;
+  width: 100%;
+  position: Absolute;
+  top: 0px;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image: url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description {
+  background-color: #FAFAFC;
+  height: 65%;
+  width: 100%;
+  position: absolute;
+  bottom: 0em;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  text-align: center;
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description {
+  height: 0;
+  padding: 0px 1em;
+}
+
+.property-card:hover .property-image {
+  height: 100%;
+}
+
+/* ------------------------- */
+/* Sidebar */
+/* ------------------------- */
+
+#sidebar > .flex-container {
+  position: sticky;
+  top: 0;
+}
+
+ul > .second-level-navi {
+  margin-left: 25px;
+  color: black;
+}
+
+.second-level-navi > a:hover {
+  color: #272727;
+}
+
+#profile {
+  position: relative;
+  margin-left: 35px;
+}
+
+#profile-img {
+  background-image: url(../assets/avatar.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* element positioning and style */
+  position: relative;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1919px) {
+  #sidebar {
+    height: 70px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  ul.second-level-navi > h3 {
+    margin: 0;
+  }
+
+  ul.second-level-navi {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li.second-level-navi {
+    text-decoration: none;
+  }
+
+  #profile {
+    display: flex;
+    justify-content: flex-end;
+    width: 46%;
+  }
+
+  #profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #sidebar > .flex-container {
+    flex-direction: column;
+  }
+
+  #profile {
+    width: 150px;
+    height: 200px;
+  }
+
+  #profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 50px;
+  }
+}
+
+input:hover{
+  background-color: dodgerblue;
+}
+
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+
+footer {
+  padding: 20px;
+  background-color: #272727;
+}
+
+footer > .flex-container {
+  justify-content: center;
+  list-style-type: none;
+}
+
+.share-items {
+  padding: 0 50px;
+}
+
+.fab {
+  color: white;
+}
+
+.footer-items > a {
+  text-decoration: none;
+  color: white;
+  padding: 0 50px;
+}

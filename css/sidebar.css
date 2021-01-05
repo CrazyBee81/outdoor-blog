@@ -1,0 +1,85 @@
+
+/* ------------------------- */
+/* Sidebar */
+/* ------------------------- */
+
+#sidebar > .flex-container {
+  position: sticky;
+  top: 0;
+}
+
+ul > .second-level-navi {
+  margin-left: 25px;
+  color: black;
+}
+
+.second-level-navi > a:hover {
+  color: #272727;
+}
+
+#profile {
+  position: relative;
+  margin-left: 35px;
+}
+
+#profile-img {
+  background-image: url(../assets/avatar.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* element positioning and style */
+  position: relative;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1919px) {
+  #sidebar {
+    height: 70px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  ul.second-level-navi > h3 {
+    margin: 0;
+  }
+
+  ul.second-level-navi {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li.second-level-navi {
+    text-decoration: none;
+  }
+
+  #profile {
+    display: flex;
+    justify-content: flex-end;
+    width: 46%;
+  }
+
+  #profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #sidebar > .flex-container {
+    flex-direction: column;
+  }
+
+  #profile {
+    width: 150px;
+    height: 200px;
+  }
+
+  #profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 50px;
+  }
+}
+
