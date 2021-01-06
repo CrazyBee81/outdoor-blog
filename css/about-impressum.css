@@ -8,13 +8,17 @@
 /* ------------------------- */
 
 .container {
-  /* Step 1: Set display to grid */
   display: grid;
-  /* Step 2: setup rows amd columns */
-  grid-template-columns: 850px;
-  grid-template-rows: 350px 100px 1fr 150px;
-  grid-template-areas: "hd" "sd" "main" "ft";
+      grid-template-columns: 360px;
+      grid-template-rows: 350px 100px 1fr 150px;
+      grid-template-areas:
+          "hd"
+          "sd"
+          "main"
+          "ft";
 }
+
+
 
 @media screen and (min-width: 900px) {
   .container {
