@@ -50,7 +50,7 @@ blockquote {
   /* Step 1: Set display to grid */
   display: grid;
   /* Step 2: setup rows amd columns */
-  grid-template-columns: 850px;
+  grid-template-columns: 360px;
   grid-template-rows: 350px 100px 1fr 150px;
   grid-template-areas: "hd" "sd" "main" "ft";
   border: 2px solid white;
@@ -96,6 +96,10 @@ main {
   grid-area: main;
 }
 
+.box {
+  width: 100vw
+}
+
 /* ------------------------- */
 /* Article */
 /* ------------------------- */
@@ -120,10 +124,25 @@ figcaption {
   height: 250px;
   float: right;
   background-color: aliceblue;
+  margin: auto;
 }
 
 .newsletter {
   text-align: center;
 }
 
+@media screen and (min-width: 1280px) {
+  #newsletter-box {
+    float: right;
+  }
 
+}
+
+@media screen and (max-width: 900px) {
+  ul.second-level-navi > h3 {
+    display:none
+  }
+  #profile {
+    display:none
+  }
+}
