@@ -89,3 +89,8 @@ h2 {
   display: flex;
 }
 
+@media screen and (max-width: 900px) {
+  ul.second-level-navi > h3 {
+    display:none
+  }
+}
