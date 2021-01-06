@@ -10,7 +10,7 @@
   /* Step 1: Set display to grid */
   display: grid;
   /* Step 2: setup rows amd columns */
-  grid-template-columns: 850px;
+  grid-template-columns: 360px;
   grid-template-rows: 350px 1fr 150px;
   grid-template-areas: "hd" "main" "ft";
   border: 2px solid yellow;
@@ -42,6 +42,7 @@
 
 .box {
   border: 1px solid white;
+  width: 100%
 }
 
 
