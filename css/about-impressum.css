@@ -20,12 +20,12 @@
 
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   .container {
     /* Step 1: Set display to grid */
     display: grid;
     /* Step 2: setup rows amd columns */
-    grid-template-columns: 320px 320px 320px 320px;
+    grid-template-columns: 768px;
     grid-template-rows: 500px 200px 1fr 200px;
     grid-template-areas: "hd hd hd hd" "sd sd sd sd" "main main main main" "ft ft ft ft";
   }
