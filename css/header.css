@@ -5,7 +5,6 @@
 header {
   background-color: #272727;
   padding: 10px 0 40px 0;
-  width: 98vw;
 }
 
 ul.first-level-navi {
@@ -23,7 +22,7 @@ ul.first-level-navi {
 }
 
 .header-image {
-  height: 75%;
+  height: 80%;
   background-image: url(../assets/panorama.jpg);
   background-position: center;
   background-size: cover;
@@ -32,4 +31,13 @@ ul.first-level-navi {
   flex-direction: column;
   justify-content: stretch;
   padding: 0 10px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.first-level-navi {
+    padding:10;
+  }
+  .first-level-navi > a {
+    padding: 0 10px;
+  }
 }
