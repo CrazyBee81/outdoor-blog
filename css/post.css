@@ -55,6 +55,17 @@ blockquote {
   grid-template-areas: "hd" "sd" "main" "ft";
   border: 2px solid white;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    /* Step 1: Set display to grid */
+    display: grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: 768px;
+    grid-template-rows: 550px 70px 1fr 200px;
+    grid-template-areas: "hd" "sd" "main" "ft";
+    border: 2px solid white;
+  }
+}
 
 @media screen and (min-width: 1280px) {
   .container {
