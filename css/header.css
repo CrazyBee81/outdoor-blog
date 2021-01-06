@@ -22,7 +22,7 @@ ul.first-level-navi {
 }
 
 .header-image {
-  height: 80%;
+  height: 60%;
   background-image: url(../assets/panorama.jpg);
   background-position: center;
   background-size: cover;
@@ -35,9 +35,14 @@ ul.first-level-navi {
 
 @media screen and (max-width: 900px) {
   ul.first-level-navi {
-    padding:10;
+    padding: 10px;
   }
+
   .first-level-navi > a {
     padding: 0 10px;
+  }
+
+  .header-image {
+    height: 70%;
   }
 }
