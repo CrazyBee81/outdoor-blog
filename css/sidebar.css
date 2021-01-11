@@ -28,68 +28,6 @@ ul > .second-level-navi {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 1919px) {
-  #sidebar {
-    height: 70px;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  ul.second-level-navi > h3 {
-    margin: 0;
-  }
-
-  ul.second-level-navi  {
-    display: flex;
-    list-style-type: none;
-  }
-
-  li.second-level-navi {
-    text-decoration: none;
-  }
-
-  #profile {
-    display: flex;
-    justify-content: flex-end;
-    width: 46%;
-  }
-
-  #profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    top: 15px;
-    margin-left: 15px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  #sidebar > .flex-container {
-    flex-direction: column;
-  }
-
-  #profile {
-    width: 150px;
-    height: 200px;
-  }
-
-  #profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 20px 50px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #sidebar > ul {
-    width: 100%;
-    padding: 0 0px;
-    margin: 0;
-  }
-  #sidebar > .flex-container {
-    display:block;
-    background-color: gray;
-  }
-}
 
 /* The dropdown container */
 .dropdown {
@@ -138,3 +76,79 @@ ul > .second-level-navi {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@media screen and (max-width: 900px) {
+  #sidebar > ul {
+    width: 100%;
+    padding: 0 0px;
+    margin: 0;
+  }
+  #sidebar > .flex-container {
+    display:block;
+    background-color: gray;
+  }
+}
+
+@media (max-width: 1919px) {
+  #sidebar {
+    height: 70px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  ul.second-level-navi > h3 {
+    margin: 0;
+  }
+
+  ul.second-level-navi  {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li.second-level-navi {
+    text-decoration: none;
+  }
+
+  #profile {
+    display: flex;
+    justify-content: flex-end;
+    width: 46%;
+  }
+
+  #profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #sidebar > .flex-container {
+    flex-direction: column;
+  }
+
+  ul > .second-level-navi {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    color: black;
+  }
+
+  li.second-level-navi {
+    padding: 20px 0;
+  }
+
+  #profile {
+    width: 150px;
+    height: 200px;
+  }
+
+  #profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 50px;
+  }
+}
+
+
