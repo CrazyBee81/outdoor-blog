@@ -21,7 +21,7 @@
     /* Step 1: Set display to grid */
     display: grid;
     /* Step 2: setup rows amd columns */
-    grid-template-columns: 768px;
+    grid-template-columns: 1fr;
     grid-template-rows: 500px 1fr 200px;
     grid-template-areas: "hd" "main" "ft";
     border: 2px solid yellow;
@@ -36,19 +36,6 @@
     grid-template-columns: 1280px;
     grid-template-rows: 500px 1fr 200px;
     grid-template-areas: "hd hd hd hd" "main main main main" "ft ft ft ft";
-    border: 2px solid yellow;
-  }
-}
-
-
-@media screen and (min-width: 1920px) {
-  .container {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    grid-template-columns: 320px 320px 320px 320px 320px 320px;
-    grid-template-rows: 500px 1000px 200px;
-    grid-template-areas: "hd hd hd hd hd hd" "main main main main main main" "ft ft ft ft ft ft";
     border: 2px solid yellow;
   }
 }
