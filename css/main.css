@@ -28,18 +28,6 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    grid-template-columns: 1280px;
-    grid-template-rows: 500px 1fr 200px;
-    grid-template-areas: "hd hd hd hd" "main main main main" "ft ft ft ft";
-    border: 2px solid yellow;
-  }
-}
-
 .box {
   border: 1px solid white;
   width: 100%
