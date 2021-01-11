@@ -9,7 +9,7 @@
 
 .container {
   display: grid;
-      grid-template-columns: 360px;
+      grid-template-columns: 1fr;
       grid-template-rows: 350px 100px 1fr 150px;
       grid-template-areas:
           "hd"
@@ -18,27 +18,14 @@
           "ft";
 }
 
-
-
 @media screen and (min-width: 768px) {
   .container {
     /* Step 1: Set display to grid */
     display: grid;
     /* Step 2: setup rows amd columns */
-    grid-template-columns: 768px;
+    grid-template-columns: 1fr;
     grid-template-rows: 500px 200px 1fr 200px;
-    grid-template-areas: "hd hd hd hd" "sd sd sd sd" "main main main main" "ft ft ft ft";
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .container {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    grid-template-columns: 320px 320px 320px 320px 320px 320px;
-    grid-template-rows: 500px 1fr 200px;
-    grid-template-areas: "hd hd hd hd hd hd" "main main main main main sd" "ft ft ft ft ft ft";
+    grid-template-areas: "hd" "sd" "main" "ft";
   }
 }
 
