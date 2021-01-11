@@ -8,37 +8,38 @@
 /* ------------------------- */
 
 body {
-  font: normal 22px "Crimson Pro", serif;
-  line-height: 32px;
+    font: normal 22px "Crimson Pro", serif;
+    line-height: 32px;
 }
 
 p {
-  margin: 0 10px ;
+    margin: 0 10px;
 }
 
-.small-paragraph{
-  font-size: 0.75rem;
+.small-paragraph {
+    font-size: 0.75rem;
 }
+
 h1 {
-  color: white;
-  margin: 20px 20px;
+    color: white;
+    margin: 20px 20px;
 }
 
 h2 {
-  margin: 20px 10px 0px;
+    margin: 20px 10px 0px;
 }
 
 blockquote {
-  font-style: italic;
+    font-style: italic;
 }
 
 .list-items > a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .flex-container {
-  display: flex;
+    display: flex;
 }
 
 
@@ -47,68 +48,69 @@ blockquote {
 /* ------------------------- */
 
 .container {
-  /* Step 1: Set display to grid */
-  display: grid;
-  /* Step 2: setup rows amd columns */
-  grid-template-columns: 360px;
-  grid-template-rows: 350px 100px 1fr 150px;
-  grid-template-areas: "hd" "sd" "main" "ft";
-  border: 2px solid white;
-}
-@media screen and (min-width: 768px) {
-  .container {
     /* Step 1: Set display to grid */
     display: grid;
     /* Step 2: setup rows amd columns */
-    grid-template-columns: 768px;
-    grid-template-rows: 550px 70px 1fr 200px;
+    grid-template-columns: 360px;
+    grid-template-rows: 350px 100px 1fr 150px;
     grid-template-areas: "hd" "sd" "main" "ft";
     border: 2px solid white;
-  }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        grid-template-columns: 768px;
+        grid-template-rows: 550px 70px 1fr 200px;
+        grid-template-areas: "hd" "sd" "main" "ft";
+        border: 2px solid white;
+    }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    grid-template-columns: 320px 320px 320px 320px;
-    grid-template-rows: 550px 70px 1fr 200px;
-    grid-template-areas: "hd hd hd hd" "sd sd sd sd" "main main main main" "ft ft ft ft";
-    border: 2px solid white;
-  }
+    .container {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        grid-template-columns: 320px 320px 320px 320px;
+        grid-template-rows: 550px 70px 1fr 200px;
+        grid-template-areas: "hd hd hd hd" "sd sd sd sd" "main main main main" "ft ft ft ft";
+        border: 2px solid white;
+    }
 }
 
 @media screen and (min-width: 1920px) {
-  .container {
-    /* Step 1: Set display to grid */
-    display: grid;
-    /* Step 2: setup rows amd columns */
-    grid-template-columns: 320px 320px 320px 320px 320px 320px;
-    grid-template-rows: 550px 1fr 200px;
-    grid-template-areas: "hd hd hd hd hd hd" "main main main main main sd" "ft ft ft ft ft ft";
-    border: 2px solid white;
-  }
+    .container {
+        /* Step 1: Set display to grid */
+        display: grid;
+        /* Step 2: setup rows amd columns */
+        grid-template-columns: 320px 320px 320px 320px 320px 320px;
+        grid-template-rows: 550px 1fr 200px;
+        grid-template-areas: "hd hd hd hd hd hd" "main main main main main sd" "ft ft ft ft ft ft";
+        border: 2px solid white;
+    }
 }
 
 header {
-  grid-area: hd;
+    grid-area: hd;
 }
 
 footer {
-  grid-area: ft;
+    grid-area: ft;
 }
 
 #sidebar {
-  grid-area: sd;
+    grid-area: sd;
 }
 
 main {
-  grid-area: main;
+    grid-area: main;
 }
 
 .box {
-  width: 100vw
+    width: 100vw
 }
 
 /* ------------------------- */
@@ -116,51 +118,57 @@ main {
 /* ------------------------- */
 
 .inflow-image {
-  float: right;
-  height: 380px;
-  width: 300px;
-  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    float: right;
+    height: 380px;
+    width: 300px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 }
+
 .inflow-image > img {
-  height: 300px;
-  width: 300px;
+    height: 300px;
+    width: 300px;
 }
 
 figcaption {
-  text-align: center;
+    text-align: center;
 }
 
 #newsletter-box {
-  width: 300px;
-  height: 250px;
-  float: right;
-  background-color: aliceblue;
-  margin: auto;
+    width: 300px;
+    height: 250px;
+    float: right;
+    background-color: aliceblue;
+    margin: auto;
 }
 
 .newsletter {
-  text-align: center;
+    text-align: center;
 }
 
 @media screen and (min-width: 1280px) {
-  #newsletter-box {
-    float: right;
-  }
+    #newsletter-box {
+        float: right;
+    }
 
 }
 
 @media screen and (max-width: 900px) {
-  ul.second-level-navi > h3 {
-    display:none
-  }
-  #profile {
-    display:none
-  }
+    #newsletter-box {
+        float: unset;
+    }
+
+    ul.second-level-navi > h3 {
+        display: none
+    }
+
+    #profile {
+        display: none
+    }
 }
 
 @media screen and (min-width: 1920px) {
-  main {
-    width: unset !important;
-  }
+    main {
+        width: unset !important;
+    }
 }
 
