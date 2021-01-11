@@ -134,7 +134,7 @@ ul > .second-level-navi {
         flex-direction: column;
     }
 
-    ul > .second-level-navi {
+    .flex-container > ul.second-level-navi {
         display: flex;
         flex-direction: column;
         margin-left: 25px;
