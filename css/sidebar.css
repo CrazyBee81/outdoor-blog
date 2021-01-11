@@ -8,13 +8,9 @@
   top: 0;
 }
 
-ul > .second-level-navi, ul > .third-level-navi {
+ul > .second-level-navi {
   margin-left: 25px;
   color: black;
-}
-
-.second-level-navi > a:hover {
-  color: #272727;
 }
 
 #profile {
@@ -38,16 +34,16 @@ ul > .second-level-navi, ul > .third-level-navi {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   }
 
-  ul.second-level-navi > h3, ul.third-level-navi > h3 {
+  ul.second-level-navi > h3 {
     margin: 0;
   }
 
-  ul.second-level-navi, li.third-level-navi-level-navi  {
+  ul.second-level-navi  {
     display: flex;
     list-style-type: none;
   }
 
-  li.second-level-navi, li.third-level-navi-level-navi {
+  li.second-level-navi {
     text-decoration: none;
   }
 
@@ -93,11 +89,7 @@ ul > .second-level-navi, ul > .third-level-navi {
     display:block;
     background-color: gray;
   }
-  .third-level-navi {
-    background-color: white;
-  }
 }
-
 
 /* The dropdown container */
 .dropdown {
@@ -107,19 +99,15 @@ ul > .second-level-navi, ul > .third-level-navi {
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
   border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  margin: 0 10px;
+  font: normal 22px "Crimson Pro", serif;
 }
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #ddd;
 }
 
 /* Dropdown content (hidden by default) */
@@ -134,7 +122,6 @@ ul > .second-level-navi, ul > .third-level-navi {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
