@@ -85,6 +85,10 @@ ul > .second-level-navi {
         display: none
     }
 
+    #sidebar > .flex-container {
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -93,10 +97,6 @@ ul > .second-level-navi {
         width: 100%;
         padding: 0 15px;
         margin: 0;
-    }
-
-    #sidebar > .flex-container {
-        display: block;
     }
 
     li.second-level-navi {
