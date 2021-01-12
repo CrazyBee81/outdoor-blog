@@ -158,7 +158,8 @@ ul > .second-level-navi {
     }
 
     #profile {
-        justify-content: flex-end;
+        justify-content: center;
+        flex-direction: column;
     }
 
     #profile {
