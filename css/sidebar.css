@@ -13,8 +13,11 @@ ul > .second-level-navi {
 }
 
 #profile {
+    display: flex;
+    justify-content: flex-start;
     position: relative;
     margin-left: 35px;
+    width: 46%;
 }
 
 #profile-img {
@@ -110,12 +113,6 @@ ul > .second-level-navi {
 
 }
 
-@media (max-width: 1280px) {
-    #profile {
-        justify-content: flex-start;
-    }
-}
-
 @media (max-width: 1919px) {
     #sidebar {
         height: 70px;
@@ -133,12 +130,6 @@ ul > .second-level-navi {
 
     li.second-level-navi {
         text-decoration: none;
-    }
-
-    #profile {
-        display: flex;
-        justify-content: flex-end;
-        width: 46%;
     }
 
     #profile-img {
@@ -164,6 +155,10 @@ ul > .second-level-navi {
 
     li.second-level-navi {
         padding: 20px 0;
+    }
+
+    #profile {
+        justify-content: flex-end;
     }
 
     #profile {
