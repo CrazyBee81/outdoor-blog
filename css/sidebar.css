@@ -76,8 +76,17 @@ ul > .second-level-navi {
     display: block;
 }
 
+@media screen and (max-width: 400px) {
+
+    #profile {
+        display: none
+    }
+
+}
+
 @media screen and (max-width: 900px) {
-    #sidebar  > .flex-container > ul {
+
+    #sidebar > .flex-container > ul {
         width: 100%;
         padding: 0 15px;
         margin: 0;
@@ -87,11 +96,23 @@ ul > .second-level-navi {
         display: block;
     }
 
+    li.second-level-navi {
+        margin: 0;
+    }
+
+    ul.second-level-navi > h3 {
+        display: none
+    }
+
     .dropdown .dropbtn {
         margin: 0;
     }
-    li.second-level-navi {
-        margin: 0;
+
+}
+
+@media (max-width: 1280px) {
+    #profile {
+        justify-content: flex-start;
     }
 }
 
